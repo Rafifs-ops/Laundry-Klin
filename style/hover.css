@@ -1,0 +1,53 @@
+nav .container .navbar-collapse .navbar-nav a.nav-link:hover {
+    color: #219EBA;
+    transform: translateY(-3px);
+    font-weight: 500;
+}
+
+.img-lokasi {
+    transition-duration: 1s;
+}
+
+.img-lokasi:hover {
+    transform: scale(1.2);
+}
+
+.img-service {
+    transition-duration: 0.8s;
+}
+
+.img-service:hover {
+    transform: scale(1.2);
+}
+
+.card-blog {
+    transition-duration: 1s;
+}
+
+.card-blog:hover {
+    transform: scale(0.9);
+}
+
+.menu-profil:hover {
+    transform: translateY(-3px);
+}
+
+.tbl-img-about {
+    transition-duration: 1s;
+}
+
+.tbl-img-about:hover {
+    transform: scale(0.9);
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+}
+
+.footer-link:hover {
+    font-weight: bold;
+    transform: translateY(-2px);
+}

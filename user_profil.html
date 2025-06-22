@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Klin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/hover.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Lato&family=Nunito+Sans:opsz@6..12&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top" data-aos="fade-down" data-aos-duration="500">
+        <div class="container">
+            <img src="assets/logo-laundryklin.png" alt="Bootstrap" width="89.9" height="27.7">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link me-3" href="index.html">Home</a>
+                    <a class="nav-link me-3" href="services.html">Services</a>
+                    <a class="nav-link me-3" href="aboutus.html">About us</a>
+                    <a class="nav-link me-3" href="booking.html">Booking</a>
+                    <a class="nav-link me-3" href="blog.html">Blogs</a>
+                    <a class="nav-link me-3" href="#footer-down">Contact us</a>
+                    <a class="nav-link me-3 active" aria-current="page"
+                        href="user_profil.html"><i class="bi bi-person-fill" style="color: #219EBA;"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar-->
+
+    <!--profil-->
+    <div class="container p-4 mt-5">
+        <div class="row">
+            <div class="col-lg-4 mb-4 mb-lg-0" data-aos="fade-right" data-aos-duration="1000">
+                <div class="d-flex flex-column p-3 rounded shadow-sm">
+                    <p class="fw-bold fs-4 mb-3 pb-2 border-bottom lato-regular"><i class="bi bi-person-circle"></i> Customer Account
+                    </p>
+                    <a href="profil/profil.html" target="iframe-profil" class="fw-bold mb-3 text-dark link-underline link-underline-opacity-0 lato-regular menu-profil"><i class="bi bi-people"></i> Profil Saya</a>
+                    <a href="profil/daftar_transaksi.html" target="iframe-profil" class="fw-bold mb-3 text-dark link-underline link-underline-opacity-0 lato-regular menu-profil"><i class="bi bi-cart-fill"></i> Daftar Transaksi</a>
+                    <a href="profil/notifikasi_profil.html" target="iframe-profil" class="fw-bold mb-3 text-dark link-underline link-underline-opacity-0 lato-regular menu-profil"><i class="bi bi-bell-fill"></i> Notifikasi</a>
+                    <div class="mt-auto">
+                        <hr>
+                        <a href="profil/faq.html" target="iframe-profil" class="fw-bold mb-1 text-dark link-underline link-underline-opacity-0 lato-regular"><i class="bi bi-chat-fill"></i> FAQ</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-8" data-aos="zoom-in-down" data-aos-duration="1000" data-aos-delay="200">
+                <iframe src="profil/profil.html" frameborder="0" style="width: 100%; height: 550px;"
+                    class="shadow rounded" name="iframe-profil"></iframe>
+            </div>
+        </div>
+    </div>
+    <!--profil-->
+
+    <!--footer-->
+    <footer style="background-color: #0D3F4A;">
+        <div class="container p-5 mt-3 justify-content-center" id="footer-down">
+            <div class="row">
+                <div class="col-md-12 text-start text-white">
+                    <h1 data-aos="fade-right" data-aos-duration="1000">Laundry <span style="color: #219EBA;">Klin</span></h1><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-white" data-aos="fade-right" data-aos-duration="1000">
+                    <h4>Jam Operasional</h4>
+                    <p>Setiap Hari/ 08:00 - 21:00</p><br>
+                    <p>Layanan Konsumen</p>
+                    <p><i class="bi bi-telephone-fill"></i> 0811-1566-664</p>
+                    <p><i class="bi bi-envelope-fill"></i> support@kliknklin.co</p>
+                </div>
+                <div class="col-md-3 text-white" data-aos="fade-up" data-aos-duration="1100">
+                    <h4>Menu</h4>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="booking.html" class="footer-link">Booking</a>
+                    <a href="services.html" class="footer-link">Service</a>
+                    <a href="user_profil.html" class="footer-link">My Profile</a>
+                </div>
+                <div class="col-md-3 text-white" data-aos="fade-down" data-aos-duration="1100">
+                    <h4>Company</h4>
+                    <a href="aboutus.html" class="footer-link">About us</a>
+                    <a href="blog.html" class="footer-link">Blogs</a>
+                </div>
+                <div class="col-md-3 text-white" data-aos="fade-up" data-aos-duration="1100">
+                    <h4>Social Media</h4>
+                    <p><a href=""><img src="assets/logo-wa.png" alt="" width="59" height="59"></a> <a href=""><img
+                                src="assets/logo-ig.png" alt="" width="50" height="50"></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <div class="container-fluid" style="background-color: #E9F5F8;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="fw-bold mt-2">@All Copyright 2025, Laundryklin. All Rights Reserved.
+                    <p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer-->
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>

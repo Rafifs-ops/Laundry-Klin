@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laundry Klin</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/hover.css">
+    <link rel="stylesheet" href="style/font.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&family=Lato&family=Nunito+Sans:opsz@6..12&display=swap"
+        rel="stylesheet">
+    <style>
+        /* CSS Kustom untuk Timeline */
+
+        .timeline-container {
+            position: relative;
+            /* PERUBAHAN: Menambah padding untuk memberi jarak antara garis dan teks */
+            padding-left: 9rem; 
+        }
+
+        /* Garis vertikal utama pada timeline */
+        .timeline-container::before {
+            content: '';
+            position: absolute;
+            /* Memposisikan garis di antara tahun dan konten */
+            left: 6rem; 
+            top: 0.5rem;
+            bottom: 0.5rem;
+            width: 4px;
+            background-color: #3498db; /* Warna biru seperti di gambar */
+            border-radius: 2px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 50px; /* Jarak antar item timeline */
+        }
+        
+        .timeline-year {
+            position: absolute;
+            /* PERUBAHAN: Disesuaikan dengan padding container baru */
+            left: -9rem; 
+            top: 50%;
+            transform: translateY(-50%);
+            color: #3498db;
+            font-weight: 700;
+            font-size: 1.75rem;
+            /* Atur lebar dan perataan teks agar rapi di sebelah kiri */
+            width: 5rem; 
+            text-align: right;
+            padding-right: 1rem; /* Jarak antara tahun dan garis vertikal */
+        }
+
+        .timeline-content {
+            background-color: transparent;
+            padding: 0;
+            position: relative;
+        }
+        
+        .timeline-content p, .timeline-content ul {
+            font-size: 1rem;
+            color: #343a40;
+            line-height: 1.6;
+            margin-bottom: 0;
+        }
+
+        .timeline-content ul {
+            padding-left: 1.5rem; /* Padding untuk list */
+            list-style-type: '• '; /* Custom bullet point */
+        }
+        
+        .timeline-content li {
+            padding-left: 0.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Responsif untuk layar kecil */
+        @media (max-width: 768px) {
+            .timeline-container {
+                /* PERUBAHAN: Menyesuaikan padding untuk mobile */
+                padding-left: 7rem; 
+            }
+            .timeline-container::before {
+                left: 4.5rem; /* Geser garis ke kiri */
+            }
+            .timeline-item::before {
+                left: 4.5rem;
+                width: 1.5rem; /* Garis horizontal lebih pendek di mobile */
+            }
+            .timeline-year {
+                font-size: 1.5rem;
+                /* PERUBAHAN: Menyesuaikan posisi tahun untuk mobile */
+                left: -7rem; 
+                width: 4rem;
+                padding-right: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top" data-aos="fade-down" data-aos-duration="500">
+        <div class="container">
+            <img src="assets/logo-laundryklin.png" alt="Bootstrap" width="89.9" height="27.7">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link me-3" href="index.html">Home</a>
+                    <a class="nav-link me-3" href="services.html">Services</a>
+                    <a class="nav-link me-3 active" aria-current="page" href="aboutus.html" style="color: #219EBA;">About us</a>
+                    <a class="nav-link me-3" href="booking.html">Booking</a>
+                    <a class="nav-link me-3" href="blog.html">Blogs</a>
+                    <a class="nav-link me-3" href="#footer-down">Contact us</a>
+                    <a class="nav-link me-3" href="user_profil.html"><i class="bi bi-person-fill text-dark"></i></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--navbar-->
+
+    <!--jumbotron-->
+    <div class="container-fluid p-5 text-center text-white"
+        style="background: linear-gradient(210deg,rgba(2, 0, 36, 1) 44%, rgba(9, 9, 121, 1) 80%, rgba(0, 212, 255, 1) 100%);;">
+        <h1 class="lato-regular fw-bold" data-aos="fade-down" data-aos-duration="1000">Tentang Kami</h1>
+        <p class="lato-regular" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">Sejak 2016, kami haidr sebagai solusi laundry modern yang memadukan teknologi, kemitraan, dan layanan yang
+            berkualitas.</p>
+    </div>
+    <!--jumbotron-->
+
+    <!--about-->
+    <div class="container rounded-5 shadow p-5 mt-3 mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="assets/img-about-us.png" alt="" width="auto" height="400" class="img-fluid" data-aos="fade-right" data-aos-duration="1000">
+            </div>
+            <div class="col-md-6">
+                <p class="fw-bold lato-regular" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="100">— Tentang <span style="color: #0369A1;">Klin Laundry</span></p>
+                <h1 class="lato-regular fw-bold" style="color: #219EBA;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Kisah Kami</h1><br>
+                <p class="lato-regular" style="color: #0D3F4A;" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">KDN didirikan pada tahun 2016 oleh sekelompok entrepreneur muda dengan tujuan
+                    menciptakan dampak
+                    sosial melalui inovasi digital. Ide awalnya bermula dari kebutuhan masyarakat kota akan layanan
+                    binatu yang praktis, sehingga lahirlah aplikasi KlinKlin. Setahun kemudian, aplikasi ini menarik
+                    perhatian investor yang tertarik mengembangkan bisnis binatu. Hari ini, KDN telah berkembang menjadi
+                    ekosistem bisnis yang mencakup layanan digital, distribusi, ritel, dan peluang usaha binatu.</p>
+            </div>
+        </div>
+    </div>
+    <!--about-->
+
+    <!--angka-->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h2 class="lato-regular fw-bold">Kami berkomitmen menghadirkan solusi <span style="color: #06B6D4;">binatu modern</span> yang efisien, mudah diakses, dan berdampak
+                    sosial.</h2>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-4 mt-3">
+                <div class="container text-center p-3 rounded-5 shadow-lg" data-aos="fade-right" data-aos-duration="1000">
+                    <h1 class="lato-regular fw-bold" style="color: #06B6D4;">500 Kg</h1>
+                    <p class="lato-regular">Pesanan Setiap Hari</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="container text-center p-3 rounded-5 shadow-lg" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="100">
+                    <h1 class="lato-regular fw-bold" style="color: #06B6D4;">100++</h1>
+                    <p class="lato-regular">Mitra Waralaba</p>
+                </div>
+            </div>
+            <div class="col-md-4 mt-3">
+                <div class="container text-center p-3 rounded-5 shadow-lg" data-aos="fade-up" data-aos-duration="1400" data-aos-delay="200">
+                    <h1 class="lato-regular fw-bold" style="color: #06B6D4;">10.000+</h1>
+                    <p class="lato-regular">Pelanggan</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--angka-->
+
+    <!--sejarah-->
+    <div class="container mt-3 p-3">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="lato-regular fw-bold" style="color: #219EBA;" data-aos="fade-right" data-aos-duration="1000">Jejak Perjalanan</h1>
+            </div>
+        </div>
+         <div class="row mt-5">
+            <div class="col-lg-10 mx-auto">
+                
+                <div class="timeline-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+                    
+                    <!-- Item Timeline 1: 2016 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2016</div>
+                        <div class="timeline-content">
+                            <p class="lato-regular">Diluncurkan aplikasi KlinKlin—solusi binatu online untuk masyarakat metropolitan</p>
+                        </div>
+                    </div>
+
+                    <!-- Item Timeline 2: 2017 -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">2017</div>
+                        <div class="timeline-content">
+                            <ul>
+                                <li class="lato-regular">Outlet pertama LaundryKlin di Jakarta resmi dibuka sebagai bentuk transformasi dari aplikasi ke bisnis fisik.</li>
+                                <li class="lato-regular">Mendapatkan dukungan dari investor untuk memulai model franchise dan paket perusahaan melalui LaundryKlin.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Item Timeline 3: Now -->
+                    <div class="timeline-item">
+                        <div class="timeline-year">Now</div>
+                        <div class="timeline-content">
+                           <p class="lato-regular">Saat ini, Laundry Klin sudah mempunyai 100+ outlet di 16 kota di Indonesia</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--sejarah-->
+
+    <!--footer-->
+    <footer style="background-color: #0D3F4A;">
+        <div class="container p-5 mt-3 justify-content-center" id="footer-down">
+            <div class="row">
+                <div class="col-md-12 text-start text-white">
+                    <h1 data-aos="fade-right" data-aos-duration="1000">Laundry <span style="color: #219EBA;">Klin</span></h1><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-white" data-aos="fade-right" data-aos-duration="1000">
+                    <h4>Jam Operasional</h4>
+                    <p>Setiap Hari/ 08:00 - 21:00</p><br>
+                    <p>Layanan Konsumen</p>
+                    <p><i class="bi bi-telephone-fill"></i> 0811-1566-664</p>
+                    <p><i class="bi bi-envelope-fill"></i> support@kliknklin.co</p>
+                </div>
+                <div class="col-md-3 text-white" data-aos="fade-up" data-aos-duration="1100">
+                    <h4>Menu</h4>
+                    <a href="index.html" class="footer-link">Home</a>
+                    <a href="booking.html" class="footer-link">Booking</a>
+                    <a href="services.html" class="footer-link">Service</a>
+                    <a href="user_profil.html" class="footer-link">My Profile</a>
+                </div>
+                <div class="col-md-3 text-white" data-aos="fade-down" data-aos-duration="1100">
+                    <h4>Company</h4>
+                    <a href="aboutus.html" class="footer-link">About us</a>
+                    <a href="blog.html" class="footer-link">Blogs</a>
+                </div>
+                <div class="col-md-3 text-white" data-aos="fade-up" data-aos-duration="1100">
+                    <h4>Social Media</h4>
+                    <p><a href=""><img src="assets/logo-wa.png" alt="" width="59" height="59"></a> <a href=""><img
+                                src="assets/logo-ig.png" alt="" width="50" height="50"></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <footer>
+        <div class="container-fluid" style="background-color: #E9F5F8;">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="fw-bold mt-2">@All Copyright 2025, Laundryklin. All Rights Reserved.
+                    <p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--footer-->
+
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
