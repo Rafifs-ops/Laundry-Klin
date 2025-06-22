@@ -49,12 +49,8 @@
     <!--carousel-->
     <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-            <div class="carousel-item active" id="imageContainer">
-                <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" id="loadingSpinner"
-                    role="status">
-                    <span class="visually-hidden">Loading...</span>
-                </div>
-                <img src="assets/carousel-new.png" class="d-block w-100 d-none" alt="..." id="myImage">
+            <div class="carousel-item active">
+                <img src="assets/carousel-new.png" class="d-block w-100 d-none" alt="...">
             </div>
         </div>
     </div>
@@ -208,36 +204,6 @@
 
     <script>
         AOS.init();
-
-        document.addEventListener('DOMContentLoaded', function() {
-    
-            // Memilih elemen spinner dan gambar berdasarkan ID mereka
-            const spinner = document.getElementById('loadingSpinner');
-            const image = document.getElementById('myImage');
-            const imageContainer = document.getElementById('imageContainer');
-
-            // Fungsi ini akan dieksekusi HANYA SETELAH gambar berhasil dimuat
-            image.onload = function() {
-                // Hapus latar belakang dan padding dari container
-                imageContainer.style.background = 'none';
-                imageContainer.style.minHeight = 'auto';
-
-                // Sembunyikan spinner dengan menambahkan kelas 'd-none'
-                spinner.classList.add('d-none');
-                
-                // Tampilkan gambar dengan menghapus kelas 'd-none'
-                image.classList.remove('d-none');
-            };
-
-            // (Penting) Fungsi ini akan dieksekusi jika gambar GAGAL dimuat
-            image.onerror = function() {
-                // Sembunyikan spinner juga jika terjadi error
-                spinner.classList.add('d-none');
-                
-                // Tampilkan pesan error di dalam container
-                imageContainer.innerHTML = '<p class="text-danger fw-bold">Gagal memuat gambar.</p>';
-            };
-        });
     </script>
 
 
