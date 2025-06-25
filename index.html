@@ -10,6 +10,7 @@
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style/hover.css">
     <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/responsive.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
@@ -66,9 +67,11 @@
                 </div>
             </div>
             <div class="row justify-content-center ms-auto me-auto">
-                <div class="col-md-9 text-start">
+                <div class="col-md-3 text-start">
                     <h1 class="lato-regular fw-bold me-2" style="color: #219EBA;" data-aos="fade-right"
                         data-aos-duration="1000">Terdekatmu</h1>
+                </div>
+                <div class="col-md-6 text-start">
                     <p class="lato-regular" data-aos="fade-up" data-aos-duration="1300">Kami memiliki banyak cabang yang
                         tersebar di berbagai daerah dan kota di
                         Indonesia, kami
@@ -77,13 +80,13 @@
                 </div>
             </div>
             <div class="row justify-content-center ms-auto me-auto p-1 rounded-pill">
-                <div class="col-md-4" data-aos="fade-right" data-aos-duration="1000">
+                <div class="col-md-4 location-map" style="background-color: #D9D9D9;">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d31732.931385472417!2d106.9742423745422!3d-6.182064124020352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1slaundy%20klin!5e0!3m2!1sid!2sid!4v1748241483657!5m2!1sid!2sid"
                         width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        referrerpolicy="no-referrer-when-downgrade" class="my-3" data-aos="fade-right" data-aos-duration="1000"></iframe>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 location-images" style="background-color: #D9D9D9;">
                     <div class="row text-center" data-aos="fade-down" data-aos-duration="1000">
                         <div class="col">
                             <img src="assets/lokasi-1.png" alt="" width="154" height="118" class="img-lokasi">
@@ -118,6 +121,7 @@
     <!--carousel 2-->
 
     <!--ulasan-->
+    <h1 class="text-center lato-regular fw-bold mt-5" data-aos="fade-right" data-aos-duration="1000">Ulasanmu Akan <span style="color: #219EBA;">Kami Dengar</span></h1>
     <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner mt-3 rounded shadow" style="max-width: 40rem; margin: 0 auto;" data-aos="fade-up"
             data-aos-duration="800">
