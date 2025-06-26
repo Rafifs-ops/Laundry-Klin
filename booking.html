@@ -23,7 +23,8 @@
 <body style="background-color: #E9F5F8;">
 
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top" data-aos="fade-down" data-aos-duration="500">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top" data-aos="fade-down"
+        data-aos-duration="500">
         <div class="container">
             <img src="assets/logo-laundryklin.png" alt="Bootstrap" width="89.9" height="27.7">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -53,41 +54,57 @@
                 <h2 class="lato-regular fw-bold"><img src="assets/ikon-booking-1.png" alt=""> Isi Data Berikut</h2>
                 <form name="booking-laundry" id="booking-form">
                     <div class="mb-3">
-                        <label for="nama-customer" class="form-label text-white p-1 rounded catamaran-font"
+                        <label for="nama-customer" class="form-label text-white p-1 px-3 rounded catamaran-font"
                             style="background-color: #0D3F4A;">Nama</label>
                         <input type="text" class="form-control" id="nama-customer" placeholder="Nama Lengkap" required
                             name="Nama">
                     </div>
                     <div class="mb-3">
-                        <label for="formGroupExampleInput2" class="form-label text-white p-1 rounded catamaran-font"
+                        <label for="formGroupExampleInput2" class="form-label text-white p-1 rounded catamaran-font px-3"
                             style="background-color: #0D3F4A;">Nomor Telepon</label>
                         <input type="number" class="form-control" id="formGroupExampleInput2"
                             placeholder="Masukan Nomor Telepon" required name="Nomor Telepon">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label text-white p-1 rounded catamaran-font"
+                        <label for="exampleFormControlTextarea1"
+                            class="form-label text-white p-1 rounded catamaran-font px-3"
                             style="background-color: #0D3F4A;">Alamat</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required
                             name="Alamat"></textarea>
                     </div>
                     <h2 class="lato-regular fw-bold"><img src="assets/ikon-booking-2.png" alt=""> Detail Laundry</h2>
-                    <select class="form-select" aria-label="Default select example" id="jenis-laundry" required
-                        name="Jenis Laundry">
-                        <option selected disabled>Pilih Jenis Laundry</option>
-                        <option value="Cuci Kering">Cuci Kering Rp 7.000/kg</option>
-                        <option value="Cuci dan Setrika">Cuci + Setrika
-                            Rp 10.000/kg</option>
-                        <option value="Setrika Saja">Setrika Saja
-                            Rp 5.000/kg</option>
-                        <option value="Cuci Bed
-                            Cover dan Sprei">Cuci Bed
-                            Cover & Sprei
-                            Rp 30.000/set</option>
-                        <option value="Cuci Boneka">Cuci Boneka
-                            Rp 20.000/pcs</option>
-                        <option value="Cuci Karpet">Cuci Karpet
-                            Rp 25.000/m²</option>
-                    </select>
+                    <p class="text-center mb-3 text-white p-1 rounded catamaran-font" style="background-color: #0D3F4A; width: 120px;">Jenis Laundry</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <input type="radio" class="btn-check" name="Jenis Laundry" id="laundry1" value="Cuci Kering"
+                            autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="laundry1"><small class="d-block">Cuci
+                                Kering</small><strong>Rp 7.000/kg</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Laundry" id="laundry2" value="Cuci dan Setrika"
+                            autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="laundry2"><small class="d-block">Cuci
+                                + Setrika</small><strong>Rp 10.000/kg</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Laundry" id="laundry3" value="Setrika Saja"
+                            autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="laundry3"><small
+                                class="d-block">Setrika Saja</small><strong>Rp 5.000/kg</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Laundry" id="laundry4" value="Cuci Bed Cover dan Sprei"
+                            autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="laundry4"><small class="d-block">Cuci
+                                Bed Cover</small><strong>Rp 30.000/set</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Laundry" id="laundry5" value="Cuci Boneka"
+                            autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="laundry5"><small class="d-block">Cuci
+                                Boneka</small><strong>Rp 20.000/pcs</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Laundry" id="laundry6" value="Cuci Karpet"
+                            autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="laundry6"><small class="d-block">Cuci
+                                Karpet</small><strong>Rp 25.000/m²</strong></label>
+                    </div>
                     <select class="form-select mt-2" aria-label="Default select example" id="estimasi" required
                         name="Estimasi">
                         <option selected disabled>Estimasi Pengerjaan</option>
@@ -95,24 +112,25 @@
                         <option value="Express">Express (24 jam) +Rp 8.000</option>
                     </select>
                     <div class="mb-3 mt-2">
-                        <label for="formGroupExampleInput2" class="form-label text-white p-1 rounded catamaran-font"
+                        <label for="formGroupExampleInput2" class="form-label text-white p-1 rounded catamaran-font px-3"
                             style="background-color: #0D3F4A;">Berat (Kg)</label>
                         <input type="number" class="form-control" id="berat" placeholder="Masukan berat cucian Anda...."
                             required name="Berat">
                     </div>
                     <h2 class="lato-regular fw-bold"><img src="assets/ikon-booking-3.png" alt=""> Jenis Pengiriman</h2>
-                    <select class="form-select mt-2" aria-label="Default select example" id="jenis-pengiriman" required
-                        name="Jenis Pengiriman">
-                        <option selected disabled>Jenis Pengiriman</option>
-                        <option value="Antar Jemput">Antar Jemput
-                            Rp 8.000</option>
-                        <option value="Antar Saja">Antar Saja
-                            Rp 4.000</option>
-                        <option value="Jemput Saja">Jemput Saja
-                            Rp 4.000</option>
-                        <option value="Drop Off">Drop off
-                            Rp 0</option>
-                    </select>
+                    <div class="d-flex flex-wrap gap-2">
+                        <input type="radio" class="btn-check" name="Jenis Pengiriman" id="kirim1" value="Antar Jemput" autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="kirim1"><small class="d-block">Antar Jemput</small><strong>Rp 8.000</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Pengiriman" id="kirim2" value="Antar Saja" autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="kirim2"><small class="d-block">Antar Saja</small><strong>Rp 4.000</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Pengiriman" id="kirim3" value="Jemput Saja" autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="kirim3"><small class="d-block">Jemput Saja</small><strong>Rp 4.000</strong></label>
+
+                        <input type="radio" class="btn-check" name="Jenis Pengiriman" id="kirim4" value="Drop off" autocomplete="off">
+                        <label class="btn btn-outline-success p-3 text-start" for="kirim4"><small class="d-block">Drop off</small><strong>Rp -</strong></label>
+                    </div>
                     <button type="button" class="btn btn-primary mt-3 catamaran-font" onclick="invoice()">Order</button>
                 </form>
             </div>
@@ -203,14 +221,19 @@
             </div>
             <div class="row justify-content-center bg-body-tertiary rounded-3 shadow mt-3 p-3">
                 <div class="col-md-8">
-                    <select class="form-select" aria-label="Default select example" required name="Metode Pembayaran"
-                        form="booking-form">
-                        <option selected disabled>Pilih Metode Pembayaran</option>
-                        <option value="Cash">Cash</option>
-                        <option value="M-Banking">M-Banking</option>
-                        <option value="Qris">Qris</option>
-                        <option value="E-Wallet">E-Wallet</option>
-                    </select>
+                    <div class="d-flex flex-wrap gap-2">
+                        <input type="radio" class="btn-check" name="Metode Pembayaran" id="bayar1" value="Cash" autocomplete="off" form="booking-form">
+                        <label class="btn btn-outline-success flex-fill p-3" for="bayar1"><i class="bi bi-cash-coin d-block fs-4 mb-1"></i> Cash</label>
+
+                        <input type="radio" class="btn-check" name="Metode Pembayaran" id="bayar2" value="M-banking" autocomplete="off" form="booking-form">
+                        <label class="btn btn-outline-success flex-fill p-3" for="bayar2"><i class="bi bi-phone-vibrate d-block fs-4 mb-1"></i> M-banking</label>
+
+                        <input type="radio" class="btn-check" name="Metode Pembayaran" id="bayar3" value="Qris" autocomplete="off" form="booking-form">
+                        <label class="btn btn-outline-success flex-fill p-3" for="bayar3"><i class="bi bi-qr-code d-block fs-4 mb-1"></i> Qris</label>
+                        
+                        <input type="radio" class="btn-check" name="Metode Pembayaran" id="bayar4" value="E-Wallet" autocomplete="off" form="booking-form">
+                        <label class="btn btn-outline-success flex-fill p-3" for="bayar4"><i class="bi bi-credit-card d-block fs-4 mb-1"></i> E-Wallet</label>
+                    </div>
                 </div>
                 <div class="row justify-content-center mt-3 p-3">
                     <div class="col-md-4 text-center">
@@ -232,7 +255,8 @@
         <div class="container p-5 mt-3 justify-content-center" id="footer-down">
             <div class="row">
                 <div class="col-md-12 text-start text-white">
-                    <h1 data-aos="fade-right" data-aos-duration="1000">Laundry <span style="color: #219EBA;">Klin</span></h1><br>
+                    <h1 data-aos="fade-right" data-aos-duration="1000">Laundry <span style="color: #219EBA;">Klin</span>
+                    </h1><br>
                 </div>
             </div>
             <div class="row">
@@ -307,10 +331,10 @@
 
                 //Mendapatkan value
                 const namaCustomer = document.getElementById('nama-customer').value;
-                const jenisLaundry = document.getElementById('jenis-laundry').value;
+                const jenisLaundry = document.querySelector('input[name="Jenis Laundry"]:checked').value;
                 const berat = document.getElementById('berat').value;
                 const estimasi = document.getElementById('estimasi').value;
-                const jenisPengiriman = document.getElementById('jenis-pengiriman').value;
+                const jenisPengiriman = document.querySelector('input[name="Jenis Pengiriman"]:checked').value;
 
                 //Hitung biaya
                 const biayaLaundry = () => {
